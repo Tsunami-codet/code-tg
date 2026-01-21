@@ -2,16 +2,48 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Гадание на картах Таро</title>
+    <title>Гадание на Таро и гороскоп</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>🔮 Гадание на картах Таро 🔮</h1>
-<p>Нажмите кнопку, чтобы вытащить карту:</p>
+<header>
+    <h1>🎴 Таро + Гороскоп</h1>
+    <p>Выбирайте расклад и узнавайте своё будущее!</p>
+</header>
 
-<button id="draw1">Выполнить расклад (1 карта)</button>
-<div id="result"></div>
+<section id="tarot">
+    <h2>Гадание на картах Таро</h2>
+    <button id="drawBtn">Вытянуть карту</button>
+    <div id="result"></div>
+
+    <label for="spread">Выберите расклад:</label>
+    <select id="spread">
+        <option value="one">1 карта</option>
+        <option value="three">3 карты — прошлое/настоящее/будущее</option>
+        <option value="celtic">Кельтский крест</option>
+    </select>
+</section>
+
+<section id="horoscope">
+    <h2>Гороскоп</h2>
+    <label for="sign">Выберите знак:</label>
+    <select id="sign">
+        <option value="aries">Овен</option>
+        <option value="taurus">Телец</option>
+        <option value="gemini">Близнецы</option>
+        <option value="cancer">Рак</option>
+        <option value="leo">Лев</option>
+        <option value="virgo">Дева</option>
+        <option value="libra">Весы</option>
+        <option value="scorpio">Скорпион</option>
+        <option value="sagittarius">Стрелец</option>
+        <option value="capricorn">Козерог</option>
+        <option value="aquarius">Водолей</option>
+        <option value="pisces">Рыбы</option>
+    </select>
+    <button id="showHoroscope">Показать гороскоп</button>
+    <div id="horoscopeResult"></div>
+</section>
 
 <script src="app.js"></script>
 </body>
